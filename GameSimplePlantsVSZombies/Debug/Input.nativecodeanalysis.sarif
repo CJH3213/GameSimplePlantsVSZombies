@@ -1,0 +1,43 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.36.32532.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/input.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "e2bb15caae7983fdd2ca9fbd39169100a0d944c5560a42f6d835c44444be90de"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/input.h"
+          },
+          "hashes": {
+            "sha-256": "b96e77d7635bbde3de4a8b93508a9b1bc3e59e9c207030a70f042596d600e6d9"
+          }
+        }
+      ]
+    }
+  ]
+}

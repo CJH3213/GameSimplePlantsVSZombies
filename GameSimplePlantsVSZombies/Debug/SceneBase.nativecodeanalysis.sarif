@@ -1,0 +1,99 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.36.32532.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/scenebase.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "e2c155da592f54d49c56b2e296acee0b223a21a7002a44cb070ebfe26389f699"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/scenebase.h"
+          },
+          "hashes": {
+            "sha-256": "50f0bdead083420b7539b78e61ff97e4dd43a4a4f983f28c430773ba13123902"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gameobject.h"
+          },
+          "hashes": {
+            "sha-256": "fd1209bbd5cf2537567642a43cbb621016fce5960aabf7596bbf52e23a2a8436"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/transformcomponent.h"
+          },
+          "hashes": {
+            "sha-256": "889922e16ff00419472ea8927761bb991487490d7ed070b6720dfb1e9b56c4cb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/componentbase.h"
+          },
+          "hashes": {
+            "sha-256": "7968ce9ba097f133d9c5cf741f5c0ac285ba63af7a3a15cf7f171cc0947ab56c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/object.h"
+          },
+          "hashes": {
+            "sha-256": "7ee33bb3385bcd858f29b94c27573f16c0b9cf656ca52c1c9ad396b5470767fb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/vector2.h"
+          },
+          "hashes": {
+            "sha-256": "a43dd7c019297fcf9da83321be469dade282dc376352a53608df1a937bd3a212"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/mathbase.h"
+          },
+          "hashes": {
+            "sha-256": "ce0e61c49f9084cce5b129015f47558df03304c5812b88af2593e2b30210b21e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/prefab.h"
+          },
+          "hashes": {
+            "sha-256": "4097c5fb1b688b7805d0bfa648df5cb146bb2c9545c38cd4864648bad2ef53ef"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Base">
+      <UniqueIdentifier>{457bd58c-89c7-4591-92e0-1d6f5e3472ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Base">
+      <UniqueIdentifier>{bc9691df-17bc-4bf5-8144-26bf9530a53c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Math">
+      <UniqueIdentifier>{b19ae0d2-aac4-4ed9-ad27-d56b7d74a74c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Math">
+      <UniqueIdentifier>{6d319780-954b-4ef1-b9c8-89a72a78daa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\SDLAbout">
+      <UniqueIdentifier>{bb3919e9-e069-453b-90ef-1d096669bc04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\SDLAbout">
+      <UniqueIdentifier>{a30196d9-3f4c-45f2-8647-f8fb6e62636a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\InputSystem">
+      <UniqueIdentifier>{4eafc230-59d2-49d0-a0ce-2d3cf820f9be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Base\Button">
+      <UniqueIdentifier>{7d5ed089-863b-444f-b28c-4692b708bad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Base\Collision">
+      <UniqueIdentifier>{13499b15-1011-4940-9384-e415cefd0082}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Base\Collision">
+      <UniqueIdentifier>{f910ca80-be58-4fab-83f6-644e49fbe83a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Scenes">
+      <UniqueIdentifier>{d1827a52-a8dd-4771-9cd6-75f51d866b00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Scenes\MainMenu">
+      <UniqueIdentifier>{b8c3a983-37d6-4829-be9b-31672ecff42d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Scenes\LoadingPage">
+      <UniqueIdentifier>{29c4e414-494b-47a7-9eb5-39b7df312961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Scenes">
+      <UniqueIdentifier>{9fc8395b-658b-456d-9325-c31d79991a60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Scenes\MainMenu">
+      <UniqueIdentifier>{fc713051-de90-4264-839c-2b61390fe039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Scenes\LoadingPage">
+      <UniqueIdentifier>{0f57e1b0-08d9-4e20-97ab-f07cd93befd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Scenes\TestScene">
+      <UniqueIdentifier>{2664bd0e-e163-430f-8212-4604788ddbd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Scenes\TestScene">
+      <UniqueIdentifier>{156f3b38-7059-43ad-95b0-92daf114e975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Base\Component">
+      <UniqueIdentifier>{cd2c6ad6-6cae-4e5d-b8ec-53ec42754ac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Base\InputSystem">
+      <UniqueIdentifier>{cfdeda66-8d51-48ad-9be8-ea3fb415d39d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Objects">
+      <UniqueIdentifier>{b928b667-4092-4ef4-b818-d7f264bd82d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Objects">
+      <UniqueIdentifier>{cefdbb23-d1bb-4802-8e0c-b4d6629fc753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Objects\Slider">
+      <UniqueIdentifier>{52aa1682-f2ff-4f68-923d-33978b910b48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Scenes\AdventurePage">
+      <UniqueIdentifier>{b56913e7-e2cc-4dcc-b6f1-9fe16fce5464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Scenes\AdventurePage">
+      <UniqueIdentifier>{4219b8cc-d5db-437d-b083-706a766035e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Base\Component\Button">
+      <UniqueIdentifier>{a3df10a9-cfea-4bb6-ac51-10ab1a157e1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Base\Component\Slider">
+      <UniqueIdentifier>{be9f108b-58ca-43dc-8105-73d1e0ec39f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Base\Renderer">
+      <UniqueIdentifier>{aef3d515-07eb-433a-9798-b606d9b40db9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Base\Renderer">
+      <UniqueIdentifier>{2dde00b1-6c01-4aa8-b8f0-22f6af5c2312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Scenes\AdventurePage\Prefabs">
+      <UniqueIdentifier>{e658d946-8a73-4882-a118-4a463fbb9a17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Scenes\AdventurePage\Prefabs">
+      <UniqueIdentifier>{fd55683f-c539-4d5e-9022-c3ba297f72a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Scenes\AdventurePage\Scripts">
+      <UniqueIdentifier>{ae29115e-511a-4b51-8c1d-9ec6be388e42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Scenes\AdventurePage\Scripts">
+      <UniqueIdentifier>{a4497271-6edd-4656-b77b-9aea093575eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Base\Scene">
+      <UniqueIdentifier>{da150595-a154-4ad7-bdae-b3647da8a4fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Base\GameObject">
+      <UniqueIdentifier>{dfe14bf2-2505-4a2c-98d2-3867b5c4fc58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Base\Scene">
+      <UniqueIdentifier>{cbf43f21-55a9-445e-9913-67e94c995863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Base\GameObject">
+      <UniqueIdentifier>{22e50704-b236-43df-a8a0-b7938068795a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Base\Animator">
+      <UniqueIdentifier>{11402ca6-0c0e-48d3-af10-8a0d3c10a049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Base\Animator">
+      <UniqueIdentifier>{92e96c6b-8781-4948-b047-ac68c0b53f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Base\Audio">
+      <UniqueIdentifier>{7741838b-890c-4e78-af0d-8561c60cb55d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Base\Audio">
+      <UniqueIdentifier>{af0cf0f3-89d0-4ac5-83ac-98baa8d18922}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ComponentBase.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="MathBase.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageManagement.cpp">
+      <Filter>源文件\SDLAbout</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>源文件\SDLAbout</Filter>
+    </ClCompile>
+    <ClCompile Include="PollEvent.cpp">
+      <Filter>源文件\SDLAbout</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicInputDevice.cpp">
+      <Filter>源文件\InputSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardState.cpp">
+      <Filter>源文件\InputSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseState.cpp">
+      <Filter>源文件\InputSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>源文件\SDLAbout</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Size2.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformComponent.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>源文件\Base\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionQuadTree.cpp">
+      <Filter>源文件\Base\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="SliderComponent.cpp">
+      <Filter>源文件\Objects\Slider</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuScene.cpp">
+      <Filter>源文件\Scenes\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Script01.cpp">
+      <Filter>源文件\Scenes\LoadingPage</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureRender.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingPageScene.cpp">
+      <Filter>源文件\Scenes\LoadingPage</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingSliderPrefab.cpp">
+      <Filter>源文件\Scenes\LoadingPage</Filter>
+    </ClCompile>
+    <ClCompile Include="GraveButton.cpp">
+      <Filter>源文件\Scenes\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="FontManager.cpp">
+      <Filter>源文件\SDLAbout</Filter>
+    </ClCompile>
+    <ClCompile Include="Script02.cpp">
+      <Filter>源文件\Scenes\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="AdventurePage.cpp">
+      <Filter>源文件\Scenes\AdventurePage</Filter>
+    </ClCompile>
+    <ClCompile Include="TextComponent.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="IRenderer.cpp">
+      <Filter>源文件\Base\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderManager.cpp">
+      <Filter>源文件\Base\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="ICollider.cpp">
+      <Filter>源文件\Base\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="IPointer.cpp">
+      <Filter>源文件\Base\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="TextButton.cpp">
+      <Filter>源文件\Scenes\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="CardBank.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="CardBankScript.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="CardScript.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="ChooseBoxScript.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="ChooseBox.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBase.cpp">
+      <Filter>源文件\Base\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>源文件\Base\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>源文件\Base\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Prefab.cpp">
+      <Filter>源文件\Base\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelBackGround.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelBackGroundScript.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="GrowPlant.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>源文件\InputSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GrowPlantScript.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxCollider.cpp">
+      <Filter>源文件\Base\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="ColliderBase.cpp">
+      <Filter>源文件\Base\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="EventHandlers.cpp">
+      <Filter>源文件\Base\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>源文件\Base\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageButton.cpp">
+      <Filter>源文件\Base\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="PlantsManager.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="TurfScript.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="ShovelScript.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="CardInfo.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="PrefabPack.cpp">
+      <Filter>源文件\Base\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Peashooter.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator.cpp">
+      <Filter>源文件\Base\Animator</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteAnimator.cpp">
+      <Filter>源文件\Base\Animator</Filter>
+    </ClCompile>
+    <ClCompile Include="Sunflower.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="PrefabManager.cpp">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="PlantInfo.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Sun.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="SunflowerScript.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="SunScript.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="SunCreatorScript.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Zombie.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="ZombiesManager.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelManager.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="ZombieScript.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="LifeScript.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Turf.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectilePea.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="PeashooterScript.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectilePeaScript.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="WAV_File.cpp">
+      <Filter>源文件\Base\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioSource.cpp">
+      <Filter>源文件\Base\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioDevice.cpp">
+      <Filter>源文件\SDLAbout</Filter>
+    </ClCompile>
+    <ClCompile Include="FlagMeter.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Object.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="MathBase.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageManagement.h">
+      <Filter>头文件\SDLAbout</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>头文件\SDLAbout</Filter>
+    </ClInclude>
+    <ClInclude Include="IsBaseOfTemplate.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="PollEvent.h">
+      <Filter>头文件\SDLAbout</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicInputDevice.h">
+      <Filter>头文件\Base\InputSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardState.h">
+      <Filter>头文件\Base\InputSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseState.h">
+      <Filter>头文件\Base\InputSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonStateEnum.h">
+      <Filter>头文件\Base\InputSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>头文件\SDLAbout</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Size2.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentBase.h">
+      <Filter>头文件\Base\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformComponent.h">
+      <Filter>头文件\Base\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>头文件\Base\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionQuadTree.h">
+      <Filter>头文件\Base\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="SliderComponent.h">
+      <Filter>头文件\Base\Component\Slider</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingPageScene.h">
+      <Filter>头文件\Scenes\LoadingPage</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenuScene.h">
+      <Filter>头文件\Scenes\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Script01.h">
+      <Filter>头文件\Scenes\LoadingPage</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageButton.h">
+      <Filter>头文件\Base\Component\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingSliderPrefab.h">
+      <Filter>头文件\Scenes\LoadingPage</Filter>
+    </ClInclude>
+    <ClInclude Include="GraveButton.h">
+      <Filter>头文件\Scenes\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="FontManager.h">
+      <Filter>头文件\SDLAbout</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Script02.h">
+      <Filter>头文件\Scenes\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="AdventurePage.h">
+      <Filter>头文件\Scenes\AdventurePage</Filter>
+    </ClInclude>
+    <ClInclude Include="TextComponent.h">
+      <Filter>头文件\Base\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="IRenderer.h">
+      <Filter>头文件\Base\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderManager.h">
+      <Filter>头文件\Base\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="ICollider.h">
+      <Filter>头文件\Base\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="IPointer.h">
+      <Filter>头文件\Base\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="TextButton.h">
+      <Filter>头文件\Scenes\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="CardBank.h">
+      <Filter>头文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="CardBankScript.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="CardScript.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>头文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="ChooseBoxScript.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="ChooseBox.h">
+      <Filter>头文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBase.h">
+      <Filter>头文件\Base\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>头文件\Base\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>头文件\Base\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Prefab.h">
+      <Filter>头文件\Base\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelBackGround.h">
+      <Filter>头文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelBackGroundScript.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="GrowPlant.h">
+      <Filter>头文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>头文件\Base\InputSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GrowPlantScript.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxCollider.h">
+      <Filter>头文件\Base\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="ColliderBase.h">
+      <Filter>头文件\Base\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHandlers.h">
+      <Filter>头文件\Base\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>头文件\Base\Component\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="PlantsManager.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="TurfScript.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="ShovelScript.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="CardInfo.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="PrefabPack.h">
+      <Filter>头文件\Base\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Peashooter.h">
+      <Filter>头文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator.h">
+      <Filter>头文件\Base\Animator</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteAnimator.h">
+      <Filter>头文件\Base\Animator</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureRender.h">
+      <Filter>头文件\Base\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Sunflower.h">
+      <Filter>头文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="PrefabManager.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="PlantInfo.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Sun.h">
+      <Filter>头文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="SunflowerScript.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="SunScript.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="SunCreatorScript.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Zombie.h">
+      <Filter>头文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="ZombiesManager.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelManager.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="ZombieScript.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="LifeScript.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Turf.h">
+      <Filter>头文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectilePea.h">
+      <Filter>头文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="PeashooterScript.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectilePeaScript.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="WAV_File.h">
+      <Filter>头文件\Base\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioSource.h">
+      <Filter>头文件\Base\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioDevice.h">
+      <Filter>头文件\SDLAbout</Filter>
+    </ClInclude>
+    <ClInclude Include="FlagMeter.h">
+      <Filter>头文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameSimplePlantsVSZombies.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

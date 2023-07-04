@@ -1,0 +1,459 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.36.32532.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/mousestate.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "cca3820cd5df05bd514cdfb3b75a989c38f24cc428fcfa60ac2a61caef9436cc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/mousestate.h"
+          },
+          "hashes": {
+            "sha-256": "563d1a7c2e838461db54157d7a8d7026a3b467c3a4f2dd35b2701a171a140a9c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/basicinputdevice.h"
+          },
+          "hashes": {
+            "sha-256": "c3777bcafb57286a00f519ce7eee75e99e8c18fdb923625682faa0a5215b05ae"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/buttonstateenum.h"
+          },
+          "hashes": {
+            "sha-256": "68424d24517a17af033d9177c6644106a9ed9e84e60229e81ce3dc4425024396"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/vector2.h"
+          },
+          "hashes": {
+            "sha-256": "a43dd7c019297fcf9da83321be469dade282dc376352a53608df1a937bd3a212"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/mathbase.h"
+          },
+          "hashes": {
+            "sha-256": "ce0e61c49f9084cce5b129015f47558df03304c5812b88af2593e2b30210b21e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl.h"
+          },
+          "hashes": {
+            "sha-256": "7402da62572f4d977d9c7632e08168832adacdb4820917e72b891f60718fa857"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_main.h"
+          },
+          "hashes": {
+            "sha-256": "41aa954e11c6c55e8fb0a4c379b899243a606c00e69681ac4db593bd08d1d23d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_stdinc.h"
+          },
+          "hashes": {
+            "sha-256": "25f945eb4ccbb70f31cc91c2bda42ea41261d1c5fbd2b9393b0f5f9471b51fb9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_config.h"
+          },
+          "hashes": {
+            "sha-256": "9d5b46234a8fa7340b9a048b2ce0903ded5092c2f39d2dfe4a1e101fd6a12864"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_platform.h"
+          },
+          "hashes": {
+            "sha-256": "a505af23c30280cf6342089bd71185211706e4ec382c55f0d1c9bbd9356c64b5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/begin_code.h"
+          },
+          "hashes": {
+            "sha-256": "04510223e47eb7377799f841cc69e871a054c28442aa7b884ea029c62ea973b1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/close_code.h"
+          },
+          "hashes": {
+            "sha-256": "33b3409fcefb5d55acddea1ecc799cce496ca25588757327787a081c4f68c331"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_assert.h"
+          },
+          "hashes": {
+            "sha-256": "3fdec4ea813b3e6ff645dfec408da57e76e837739a2d67c0e1fcd7738947496d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_atomic.h"
+          },
+          "hashes": {
+            "sha-256": "958bcfff611d842ee48e3465a3b90b1bb6ed73942d62a5aeaf6e7ac8a5956025"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_audio.h"
+          },
+          "hashes": {
+            "sha-256": "107e064767d359b5739e19c0e41dc3addb6924db9e727d383611413d97505f99"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_error.h"
+          },
+          "hashes": {
+            "sha-256": "60a973566675760b9c457672594f64bc88d3f50641a212b1cf8f622d0fcf3d01"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_endian.h"
+          },
+          "hashes": {
+            "sha-256": "d72fb033c7689965c50e8b74cf30a68c76f7e2f96a3bc63bbfddc36a62384e68"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_mutex.h"
+          },
+          "hashes": {
+            "sha-256": "4db41a0fdd8fd21fb7b0d1297981e0f56d434a3dc2bb5ae7dc720881e7910c2e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_thread.h"
+          },
+          "hashes": {
+            "sha-256": "33298e7edbbf49404c9789ab05eb57bf4ea14e67b17e6130585baf1a831d993f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_rwops.h"
+          },
+          "hashes": {
+            "sha-256": "39623de4e36066f767fc50497cc1d5d414162908f1e4b04decc62e5f001a7608"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_clipboard.h"
+          },
+          "hashes": {
+            "sha-256": "73ca27bea2c38e94b7da4257fe6a93fc2645ad3ddbac8b32076b3af89ea43e5a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_cpuinfo.h"
+          },
+          "hashes": {
+            "sha-256": "fef0b6af7e21423ebe059c38c49c7c633c0c28bda97ada9042000b9fe7dc1821"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_events.h"
+          },
+          "hashes": {
+            "sha-256": "f0802b5c18232ef8c44bbb61735578dccbe13bb55bd4b04bb3a24e8ecae5261f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_video.h"
+          },
+          "hashes": {
+            "sha-256": "66c6d5060a097536359c95f23872aff593744748054cf48387f7f9f4046936a6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_pixels.h"
+          },
+          "hashes": {
+            "sha-256": "010f5387921d54b3b65df929314b9902ac6d6105da4228a21d05634c9c91ab68"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_rect.h"
+          },
+          "hashes": {
+            "sha-256": "afa4fb3566e197cd13cf7621b38223158f1a6faf074339ebadefc28c3e7cb6c8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_surface.h"
+          },
+          "hashes": {
+            "sha-256": "66993a8ebc93d8b78ddf57f60cd4ea98b982aac2d6e9534bd5487b1cd18ec002"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_blendmode.h"
+          },
+          "hashes": {
+            "sha-256": "a3a69cc5bc5eb2e6d2e73e3813268a4f12ede2c17dee3d3ea21f6eef0e2fa4d0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_keyboard.h"
+          },
+          "hashes": {
+            "sha-256": "1c0cc7b648dbd591ae2095297af21cf77acd8f070619c8ea3b41567e45ae6899"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_keycode.h"
+          },
+          "hashes": {
+            "sha-256": "5567b5d381ac47f62edd4345f7ca54849e7d416c6ff84b363cecf25887a90625"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_scancode.h"
+          },
+          "hashes": {
+            "sha-256": "1beb3f357a7593aa1a71de7f588e8ce57da7caeee38a569d4c3068cd91d71e25"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_mouse.h"
+          },
+          "hashes": {
+            "sha-256": "a12c97589d1397e175be34ef5bb34ee752ff1643f3d043f02a159f794f394437"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_joystick.h"
+          },
+          "hashes": {
+            "sha-256": "f60eec8e6279d2f38739233da5b6c6510ab6022a809cbd2fd5fc4c3e53ffeb1a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_gamecontroller.h"
+          },
+          "hashes": {
+            "sha-256": "fa7f4bd73b009dc1bce080695e77e95abafd58bb53e9e4132af96dfeb471fad4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_sensor.h"
+          },
+          "hashes": {
+            "sha-256": "83b914e15ca5c50745405274aba13c2039708cf5e6f55f9be82d2c97b9f21d33"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_quit.h"
+          },
+          "hashes": {
+            "sha-256": "19d3fcccadf762f34cfd894acbced7827c7925704baf41f79d6d61e89bd7bd57"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_gesture.h"
+          },
+          "hashes": {
+            "sha-256": "e47e1f85b9d60ef48a71c0f842d1dc42d621b2b82d92dc854f2abd8e084a6432"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_touch.h"
+          },
+          "hashes": {
+            "sha-256": "89921ce7114aa85a088051b1f4fe234923cdbfbe7122a118e5885a8ea3f73472"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_filesystem.h"
+          },
+          "hashes": {
+            "sha-256": "7de84bbd904f402766313f859732b4140aea915d785e3247715cc18a2e417524"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_haptic.h"
+          },
+          "hashes": {
+            "sha-256": "35e7f9afc062771d457937df9fdfaeccd64c970c6ed49dfb5782cecce89bc71e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_hints.h"
+          },
+          "hashes": {
+            "sha-256": "0eca50b9269fbb30d5696952b2c354447f846171d2ce438f06690601acc8d95a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_loadso.h"
+          },
+          "hashes": {
+            "sha-256": "6e972efccb39084e441d5575cd721f5a0870f0933ca81db5d78c5fb085013de1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_log.h"
+          },
+          "hashes": {
+            "sha-256": "290325289bebf62c06bf848fc5dc6a4f2d4ddaa0fc3dd5e92510f3a9e59fca29"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_messagebox.h"
+          },
+          "hashes": {
+            "sha-256": "72433c18f5a959f95cbbc12be5cf9469148969e54d3e40aae6590beb6f249d64"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_metal.h"
+          },
+          "hashes": {
+            "sha-256": "f408196c489132dd23dae8befa725a1fe117cfd505e8bb557a58ed66402fbed6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_power.h"
+          },
+          "hashes": {
+            "sha-256": "98b10b1c4c2b24e0346a4ad301a583f9e61342bdf4aa00b3e89f0aefdb0f0df9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_render.h"
+          },
+          "hashes": {
+            "sha-256": "463e7a343ed85d5ff5875447e97d87a347c9d228cf0d39acebe35ae37174b9e4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_shape.h"
+          },
+          "hashes": {
+            "sha-256": "440f3a72cf1195bee216660e809f1d38789bb9d8faad0bc71b7b781fc0069a68"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_system.h"
+          },
+          "hashes": {
+            "sha-256": "035a2999615e7c0a9b37964e645fa0ea956dbda1e299b6cf144a08bc1fe75757"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_timer.h"
+          },
+          "hashes": {
+            "sha-256": "a68483fb2b917761ab4960c050d12b11c9608811fd12264e64387a65f1bf8dc7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_version.h"
+          },
+          "hashes": {
+            "sha-256": "375a40219056ef90a65826448a09e64aa97be1ea576b2a1161c5030a5f9ef0fd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_locale.h"
+          },
+          "hashes": {
+            "sha-256": "49814dfcbd92da929335941ee1d1942933d31576ea5d9959dd5ca5e32e7067cb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cjhfiles/c++/gamesimpleplantsvszombies/gamesimpleplantsvszombies/gamesimpleplantsvszombies/sdl2/sdl2-2.0.14/include/sdl_misc.h"
+          },
+          "hashes": {
+            "sha-256": "af840eda9e0ab53099a22a50efcbf41addf8a739ba1b32ca759ab7136810a290"
+          }
+        }
+      ]
+    }
+  ]
+}
