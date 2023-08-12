@@ -1,0 +1,4 @@
+笔记.rar filter=lfs diff=lfs merge=lfs -text
+GameSimplePlantsVSZombies filter=lfs diff=lfs merge=lfs -text
+GameSimplePlantsVSZombies.sln filter=lfs diff=lfs merge=lfs -text
+README.md filter=lfs diff=lfs merge=lfs -text
