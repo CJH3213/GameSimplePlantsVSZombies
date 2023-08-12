@@ -73,9 +73,6 @@
     <Filter Include="头文件\Base\InputSystem">
       <UniqueIdentifier>{cfdeda66-8d51-48ad-9be8-ea3fb415d39d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\Objects">
-      <UniqueIdentifier>{b928b667-4092-4ef4-b818-d7f264bd82d4}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\Objects">
       <UniqueIdentifier>{cefdbb23-d1bb-4802-8e0c-b4d6629fc753}</UniqueIdentifier>
     </Filter>
@@ -135,6 +132,12 @@
     </Filter>
     <Filter Include="源文件\Base\Audio">
       <UniqueIdentifier>{af0cf0f3-89d0-4ac5-83ac-98baa8d18922}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Json">
+      <UniqueIdentifier>{61633a6f-2373-4c5d-a613-04c093f1950b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Json">
+      <UniqueIdentifier>{0914cdd8-b3da-4cda-8fb5-7dd07e73f3bd}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -389,6 +392,27 @@
     </ClCompile>
     <ClCompile Include="FlagMeter.cpp">
       <Filter>源文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="AdventureAudio.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="LawnMower.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="LawnMowerScript.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="Json.cpp">
+      <Filter>源文件\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonObject.cpp">
+      <Filter>源文件\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskClass.cpp">
+      <Filter>源文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="FlagMeterScript.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -652,6 +676,27 @@
     </ClInclude>
     <ClInclude Include="FlagMeter.h">
       <Filter>头文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="AdventureAudio.h">
+      <Filter>头文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="LawnMower.h">
+      <Filter>头文件\Scenes\AdventurePage\Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="LawnMowerScript.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="Json.h">
+      <Filter>头文件\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonObject.h">
+      <Filter>头文件\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskClass.h">
+      <Filter>头文件\Scenes\AdventurePage\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="FlagMeterScript.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

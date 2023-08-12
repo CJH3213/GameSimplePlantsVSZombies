@@ -62,6 +62,11 @@ void ImageButton::Awake()
 
 }
 
+void ImageButton::Update()
+{
+	mSize = mRenderTex->GetSize();
+}
+
 void ImageButton::OnMouseEnter()
 {
 	if(mHighLigTex)

@@ -3,6 +3,7 @@
 #include "Button.h"
 #include "CardBankScript.h"
 #include "Animator.h"
+#include "AudioSource.h"
 
 class SunScript :
 	public ComponentBase
@@ -10,10 +11,11 @@ class SunScript :
 private:
 	// 卡片银行
 	CardBankScript* mCardBank = nullptr;
+	// 音频组件引用
+	AudioSource* mAudio = nullptr;
 
 	// 阳光销毁时间
 	float mDisappearTime = 0.0f;
-
 	// 标记当前太阳是大太阳还是小太阳
 	bool mIsBigSun = false;
 

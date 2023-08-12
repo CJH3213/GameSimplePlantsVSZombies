@@ -7,6 +7,7 @@
 #include "Turf.h"
 #include "SunCreatorScript.h"
 #include "FlagMeter.h"
+#include "LawnMower.h"
 
 void LevelBackGroundScript::Awake()
 {
@@ -74,6 +75,18 @@ void LevelBackGroundScript::InstantiateCollider()
 		pos.x = firstTurfPos.x;
 	}
 
+	// 添加除草机
+	pos = firstTurfPos;
+	pos.x -= 75*2;
+	for (int y = 0; y < 5; y++)
+	{
+		LawnMower* lawnMower = new LawnMower();
+		GetScene()->AddGameObject(lawnMower);
+		lawnMower->SetParent(mGameObject);
+		lawnMower->mTransform->localPosition = pos;
+		pos.y += turfSize.y;
+	}
+
 	// 添加自然掉落阳光脚本
 	SunCreatorScript* creator = new SunCreatorScript();
 	mGameObject->AddComponent(creator);
@@ -81,8 +94,4 @@ void LevelBackGroundScript::InstantiateCollider()
 	creator->mGrassTLPos = { 56, 76 };
 	creator->mGrassBRPos = { 775, 575 };
 
-	// 添加关卡进度条
-	FlagMeter* flagMeter = new FlagMeter();
-	flagMeter->mTransform->SetPosition({ 700, 570 });
-	GetScene()->AddGameObject(flagMeter);
 }

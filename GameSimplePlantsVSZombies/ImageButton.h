@@ -32,6 +32,8 @@ public:
 
     // 组件初始化
     virtual void Awake() override;
+    // 组件更新
+    virtual void Update() override;
 
     // 鼠标进入回调
     void OnMouseEnter();

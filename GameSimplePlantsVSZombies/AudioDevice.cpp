@@ -154,7 +154,7 @@ void AudioDevice::AudioCallback(void* userdata, uint8_t* stream, int len)
 		currIndex += len;
 		pack->mPlaybackProgress += fillLen;
 
-		//显示当前音频的进度
-		SDL_Log(u8"播放进度：%d", pack->mPlaybackProgress);
+		// 显示当前音频的进度
+		//SDL_Log(u8"播放进度：%d", pack->mPlaybackProgress);
 	}
 }

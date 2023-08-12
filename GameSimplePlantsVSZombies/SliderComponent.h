@@ -1,6 +1,7 @@
 #pragma once
 #include "ComponentBase.h"
 #include <functional>
+#include "MathBase.h"
 
 class SliderComponent
 	: public ComponentBase
@@ -18,13 +19,23 @@ private:
 	bool mUpdateFlag = true;
 
 	// 行进宽度
-	int mWidth = 0;
+	Math::rectangle_i mFillRect;
 	// 填充区域的渲染组件
 	class TextureRender* mFillRender = nullptr;
 	// 填充区域纹理
 	class Texture* mFillTexture = nullptr;
 
 public:
+	// 进度增长方向枚举
+	enum Direction
+	{
+		LeftToRight,
+		RightToLeft,
+		BottomToTop,
+		TopToBottom
+	};
+	Direction mDirection = LeftToRight;
+
 	// 填充区域图形
 	class GameObject* mFill = nullptr;
 	// 滑块图形

@@ -75,14 +75,9 @@ void ChooseBox::Instantiate()
 			[this, bgAnimCom] {}},
 		});
 
-
-	// Ìí¼Ó±³¾°ÒôÀÖ
-	AudioSource* audio = new AudioSource();
-	AddComponent(audio);
-
 	// ½Å±¾
 	ChooseBoxScript* script = new ChooseBoxScript();
 	script->mStartBtn = chooseBoxBtnC;
-	script->mAudio = audio;
+	//script->mAudio = audio;
 	chooseBoxG->AddComponent(script);
 }

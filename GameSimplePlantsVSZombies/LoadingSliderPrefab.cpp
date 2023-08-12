@@ -49,7 +49,7 @@ void LoadingSlider::Instantiate()
 	sliderCP->SetFillRect(sliderFillGO);
 	sliderCP->SetHandleRect(sliderHandleGO);
 	sliderGO->AddComponent(sliderCP);
-	sliderCP->SetValue(0.9f);	//设置滑块初值
+	sliderCP->SetValue(0.0f);	//设置滑块初值
 
 	// 将脚本插入sliderGo游戏对象
 	Script01* script = new Script01();

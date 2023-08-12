@@ -29,6 +29,9 @@ void ColliderBase::Awake()
 
 void ColliderBase::OnDisable()
 {
+    // 注意禁用碰撞组件后碰撞状态容器会清空
+    // 请勿在碰撞回调里禁用碰撞组件影响遍历
+
     // 处理与之关联的每个碰撞器
     for (auto& state : mCollisionState)
     {
@@ -88,10 +91,13 @@ void ColliderBase::LateCollideUpdate()
         }
 
        // 为下次遍历准备状态
-        (*it).second[0] = (*it).second[1];
-        (*it).second[1] = false;
+        if(it != mCollisionState.end())
+        {
+            (*it).second[0] = (*it).second[1];
+            (*it).second[1] = false;
 
-        it++;
+            it++;
+        }
     }
 
 }

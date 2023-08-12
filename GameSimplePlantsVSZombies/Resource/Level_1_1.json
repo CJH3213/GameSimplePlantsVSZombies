@@ -1,0 +1,60 @@
+﻿{
+    "Zombies": [
+        "Basic Zombie",
+        "Conehead Zombie",
+        "Buckethead Zombie"
+    ],
+    "Prize":"Trophy",
+    "Tasks": [
+        {
+            "Type": "Delay",
+            "Time": 7
+        },
+        {
+            "Type": "Wave",
+            "Random Zombies": {
+                "Interval": 9,
+                "Number": 10,
+                "Zombies": [
+                    "Basic Zombie",
+                    "Conehead Zombie"
+                ]
+            },
+            "Specific Zombies": [
+                {
+                    "Zombie": "Conehead Zombie",
+                    "Time": 0
+                },
+                {
+                    "Zombie": "Conehead Zombie",
+                    "Time": 0
+                }
+            ]
+        },
+        {
+            "Type": "Delay",
+            "Time": 10
+        },
+        {
+            "Type": "Wave",
+            "Random Zombies": {
+                "Interval": 1,
+                "Number": 3,
+                "Zombies": [
+                    "Basic Zombie",
+                    "Conehead Zombie"
+                ]
+            },
+            "Specific Zombies": [
+                {
+                    "Zombie": "Conehead Zombie",
+                    "Time": 5.5
+                },
+                {
+                    "Zombie": "Conehead Zombie",
+                    "Time": 8.2
+                }
+            ]
+        }
+    ]
+}

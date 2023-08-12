@@ -8,6 +8,8 @@
 #include "Animator.h"
 #include "ChooseBox.h"
 #include "LevelManager.h"
+#include "AdventureAudio.h"
+#include "FlagMeter.h"
 
 AdventurePage::AdventurePage(std::string name)
 	: SceneBase(name)
@@ -53,7 +55,13 @@ void AdventurePage::Start()
 	// 添加选卡栏
 	AddGameObject(new ChooseBox());
 
+	// 添加关卡进度条
+	AddGameObject(new FlagMeter());
+
 	// 角色管理器
 	AddGameObject(new LevelManager());
+
+	// 场景音频
+	AddGameObject(new AdventureAudio());
 
 }

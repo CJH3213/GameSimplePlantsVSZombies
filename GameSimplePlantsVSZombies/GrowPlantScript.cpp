@@ -31,6 +31,7 @@ void GrowPlantScript::Awake()
 void GrowPlantScript::Update()
 {
 	// 种植到草皮的逻辑代码在草皮脚本，不在这里
+	// 详情：TurfScript
 
 	// 未种下时，跟随鼠标
 	if (mIsPlanted == false)

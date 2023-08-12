@@ -21,6 +21,9 @@ void Game::Start()
 	// 图标加载需要依赖图片库（貌似没有初始化IMG也能正常加载图标？）
 	mWindow->SetIcon("Resource/Images/bullet1.jpg");
 
+	// 音频设备开启（SDL只能操作单个音频设备，所以是单例模式）
+	AudioDevice::Open();
+
 	/*------------------资源管理器初始化------------------*/
 	// 创建图片管理器
 	mImageManagement = new ImageManagement(mWindow->GetSDLRenderer(), "Resource/Images/");
@@ -48,12 +51,12 @@ void Game::Start()
 	/*------------------以上为底层级初始化，以下为应用级初始化------------------*/
 
 	//加载第一个场景
-	//SceneBase* page1 = new LoadingPageScene("LoadingPageScene");
-	SceneBase* page1 = new AdventurePage("AdventurePage");
+	SceneBase* page1 = new LoadingPageScene("LoadingPageScene");
+	//SceneBase* page1 = new AdventurePage("AdventurePage");
 	mSceneManager->LoadScene(page1);
 
-	// 音频设备开启（SDL只能操作单个音频设备，所以是单例模式）
-	AudioDevice::Open();
+	/*------------------测试代码------------------*/
+
 }
 
 /// <summary>

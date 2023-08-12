@@ -28,6 +28,9 @@ void TurfScript::Awake()
 	auto actorsManager = GetScene()->FindGameObject("ActorsManager");
 	mPlantManager = actorsManager->GetComponent<PlantsManager>();
 
+	// 获取场景音频脚本
+	mAudio = GetScene()->FindGameObject("AdventureAudio")->GetComponent<AudioSource>();
+
 	// 注册点击监听
 	//std::string tag = mGameObject->GetName();
 	mBtn->mMouseEnterEvents.AddListener("Enter", std::bind(&TurfScript::OnMouseEnter, this));
@@ -104,6 +107,9 @@ void TurfScript::OnClick()
 		// 销毁预览种植效果的对象
 		Destroy(mPreviewPlant);
 		mPreviewPlant = nullptr;
+
+		// 播放种植音频
+		mAudio->Play("Resource/Sounds/plant.wav");
 	}
 	else
 	{

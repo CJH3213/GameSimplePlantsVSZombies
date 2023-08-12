@@ -53,6 +53,13 @@ namespace Math
 		return b < a ? b : a;
 	}
 
+	// 限范围（输出值范围只会在min和max之间）
+	template<typename T>
+	auto Clamp(const T& v, const T& min, const T& max)
+	{
+		return v < min ? min : (v > max ? max : v);
+	}
+
 	//交换两者
 	template<typename T>
 	void Swap(T& a, T& b)

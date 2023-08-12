@@ -3,10 +3,13 @@
 #include "TextureRender.h"
 #include "Game.h"
 #include "SliderComponent.h"
+#include "FlagMeterScript.h"
 
 void FlagMeter::Instantiate()
 {
-	// 切割背景条和填充条图片
+	mName = "FlagMeter";
+	mTransform->SetPosition({ 700, 570 });
+	SetActive(false);
 
 
 	// 背景条图片对象
@@ -17,7 +20,7 @@ void FlagMeter::Instantiate()
 	Texture* flagMeterTex1 = GetGame()->mImageManagement->
 		GetTextureByPath("AdventureScreen/FlagMeter.png");
 	flagMeterTex1->SetRectRgn({ 0, 0, 158, 26 });
-	TextureRender* backRender = new TextureRender(flagMeterTex1);
+	TextureRender* backRender = new TextureRender(flagMeterTex1, 4);
 	sliderBackGO->AddComponent(backRender);
 
 	// 填充条图片对象
@@ -27,8 +30,8 @@ void FlagMeter::Instantiate()
 	// 纹理渲染组件
 	Texture* flagMeterTex2 = GetGame()->mImageManagement->
 		GetTextureByPath("AdventureScreen/FlagMeter.png");
-	flagMeterTex2->SetRectRgn({ 0, 27, 158, 26 });
-	TextureRender* grassRender = new TextureRender(flagMeterTex2);
+	flagMeterTex2->SetRectRgn({ 6, 27, 145, 26 });
+	TextureRender* grassRender = new TextureRender(flagMeterTex2, 2);
 	sliderFillGO->AddComponent(grassRender);
 
 	// 滑块图片对象
@@ -39,13 +42,20 @@ void FlagMeter::Instantiate()
 	Texture* flagMeterPartsTex1 = GetGame()->mImageManagement->
 		GetTextureByPath("AdventureScreen/FlagMeterParts.png");
 	flagMeterPartsTex1->SetRectRgn({ 0, 0, 25, 25 });
-	TextureRender* rollCapRender = new TextureRender(flagMeterPartsTex1);
+	TextureRender* rollCapRender = new TextureRender(flagMeterPartsTex1, 1);
 	sliderHandleGO->AddComponent(rollCapRender);
 
 	// 添加Slider组件
 	SliderComponent* sliderCP = new SliderComponent();
-	this->AddComponent(sliderCP);
+	AddComponent(sliderCP);
 	sliderCP->SetFillRect(sliderFillGO);
 	sliderCP->SetHandleRect(sliderHandleGO);
-	sliderCP->SetValue(0.5f);	//设置滑块初值
+	sliderCP->mDirection = SliderComponent::RightToLeft;
+	sliderCP->SetValue(0.0f);	//设置滑块初值
+
+	// 控制脚本
+	FlagMeterScript* script = new FlagMeterScript();
+	AddComponent(script);
+	script->mSlider = sliderCP;
+	script->mFill = sliderFillGO;
 }

@@ -40,7 +40,12 @@ void AudioSource::Play(std::string path, bool needLoop)
 		}
 	}
 	else
-		AudioDevice::Play((*it).second);
+	{
+		AudioPackage* pack = new AudioPackage(*(*it).second);
+		pack->mPlaybackProgress = 0;	//´ÓÍ·²¥·Å
+		pack->mIsLoop = needLoop;
+		AudioDevice::Play(pack);
+	}
 }
 
 void AudioSource::Stop(std::string path)

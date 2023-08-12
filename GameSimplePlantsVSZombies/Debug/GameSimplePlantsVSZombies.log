@@ -1,1 +1,17 @@
-﻿
+﻿  AdventurePage.cpp
+  Card.cpp
+  CardBankScript.cpp
+E:\CJHFiles\C++\GameSimplePlantsVSZombies\GameSimplePlantsVSZombies\GameSimplePlantsVSZombies\CardBankScript.cpp(68,35): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\CJHFiles\C++\GameSimplePlantsVSZombies\GameSimplePlantsVSZombies\GameSimplePlantsVSZombies\CardBankScript.cpp(73,26): warning C4018: “>=”: 有符号/无符号不匹配
+  CardScript.cpp
+E:\CJHFiles\C++\GameSimplePlantsVSZombies\GameSimplePlantsVSZombies\GameSimplePlantsVSZombies\CardScript.cpp(106,13): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  ChooseBox.cpp
+  ChooseBoxScript.cpp
+E:\CJHFiles\C++\GameSimplePlantsVSZombies\GameSimplePlantsVSZombies\GameSimplePlantsVSZombies\ChooseBoxScript.cpp(40,20): warning C4018: “<”: 有符号/无符号不匹配
+  GraveButton.cpp
+  ImageButton.cpp
+  MainMenuScene.cpp
+  Script02.cpp
+  TextButton.cpp
+  正在生成代码...
+  GameSimplePlantsVSZombies.vcxproj -> E:\CJHFiles\C++\GameSimplePlantsVSZombies\GameSimplePlantsVSZombies\Debug\GameSimplePlantsVSZombies.exe

@@ -28,6 +28,9 @@ void SunScript::OnClick()
 		});
 	mAnim->Play("ToBank");
 	mBtn->SetEnable(false);
+
+	// 播放拾取阳光音频
+	mAudio->Play("Resource/Sounds/points.wav");
 }
 
 void SunScript::Awake()
@@ -35,19 +38,10 @@ void SunScript::Awake()
 	// 计算阳光消失时间=当前时间之后的8秒
 	mDisappearTime = Time::Time_s() + 8.0f;
 
-	// 根据太阳大小设置角色大小
-	//if (mIsBigSun)
-	//{
-	//	GetTransform()->localScale = { 1.0f, 1.0f };
-	//}
-	//else
-	//{
-	//	GetTransform()->localScale = { 0.6f, 0.6f };
-	//}
-	//mBtn->mSize *= GetTransform()->localScale;
-
 	// 获取卡片银行脚本
 	mCardBank = GetScene()->FindGameObject("CardBank")->GetComponent<CardBankScript>();
+	// 获取场景音频脚本
+	mAudio = GetScene()->FindGameObject("AdventureAudio")->GetComponent<AudioSource>();
 
 	// 添加点击事件回调
 	mBtn->OnClick.AddListener("OnClick", std::bind(&SunScript::OnClick, this));

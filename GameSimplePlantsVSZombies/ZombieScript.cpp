@@ -3,6 +3,8 @@
 #include "Time.h"
 #include "SceneBase.h"
 #include "TurfScript.h"
+#include "Random.h"
+#include "ZombiesManager.h"
 using namespace std::placeholders;
 
 bool ZombieScript::IsCollisionWithPlant()
@@ -20,16 +22,34 @@ void ZombieScript::ToWalking()
 	mPlantLife = nullptr;
 }
 
+void ZombieScript::ToDeath()
+{
+	mWalkingSpeed = 0;
+	//mPlantLife == nullptr;
+	mCollider->SetEnable(false);	//禁用碰撞器防止反复触发动画
+	mAnim->Play("DeathBodyGIF");
+	// 动画回调：倒地动画结束后销毁僵尸对象
+	mAnim->AddActions("DeathBodyGIF", {
+		{ 9, [this] {
+			Destroy(mGameObject); }}
+		});
+}
+
 void ZombieScript::Awake()
 {
+	// 获取场景音频脚本
+	mAudio = GetScene()->FindGameObject("AdventureAudio")->GetComponent<AudioSource>();
+
 	// 注册碰撞监听事件
 	mCollider->mEnterEvents.AddListener("Enter", std::bind(&ZombieScript::CollisionEnter, this, _1));
 	mCollider->mStayEvents.AddListener("Stay", std::bind(&ZombieScript::CollisionStay, this, _1));
 	//mCollider->mExitEvents.AddListener("Exit", std::bind(&ZombieScript::CollisionExit, this, _1));
 
 	// 监听生命值变化事件
-	mGameObject->GetComponent<LifeScript>()->mChangeEvents.
-		AddListener("HPChange", std::bind(&ZombieScript::HPChange, this, _1));
+	mZombieLife = mGameObject->GetComponent<LifeScript>();
+	mZombieLife->mChangeEvents.AddListener("HPChange", [](float hp) {
+		SDL_Log("ZombieScript HP: %f", hp);
+		});
 
 	// 校正y坐标
 	GetTransform()->localPosition.y -= 25;
@@ -39,23 +59,38 @@ void ZombieScript::Awake()
 
 void ZombieScript::Update()
 {
-	// 计算两帧间隔时间
-	float deltaTime = Time::Time_s() - mLastTime;
-	mLastTime = Time::Time_s();
+	if(mIsDead == false)
+	{
+		// 计算两帧间隔时间
+		float deltaTime = Time::Time_s() - mLastTime;
+		mLastTime = Time::Time_s();
 
-	// 僵尸往左移动
-	//mWalkingSpeed = 12;
-	GetTransform()->localPosition.x -= deltaTime * mWalkingSpeed;
-	if(GetTransform()->GetPosition().x < 0)
-		GetTransform()->localPosition.x = 290;
+		// 僵尸往左移动
+		//mWalkingSpeed = 12;
+		GetTransform()->localPosition.x -= deltaTime * mWalkingSpeed;
 
-	// 铲除植物后植物直接销毁，既不是扣血也不是碰撞分离
-	// 在不想通过广播的方式情况下，目前只能通过判断碰撞物是否有植物
-	// 如果没有和植物碰撞了，就恢复行走动作
-	if (mPlantLife != nullptr && mCollider->IsEnable() == true &&
-		IsCollisionWithPlant() == false)
-		ToWalking();
+		// 如果走过了草坪，僵尸胜利
+		if (GetTransform()->GetPosition().x < 3 && mIsFirstWinner == false)
+		{
+			mIsFirstWinner = true;
+			// 把该事件通知到僵尸管理器
+			mZomManager->ZombiesWon();
+		}
 
+		// 铲除植物后植物直接销毁，既不是扣血也不是碰撞分离
+		// 在不想通过广播的方式情况下，目前只能通过判断碰撞物是否有植物
+		// 如果没有和植物碰撞了，就恢复行走动作
+		if (mPlantLife != nullptr && mCollider->IsEnable() == true &&
+			IsCollisionWithPlant() == false)
+			ToWalking();
+
+		// 血量为0后转为死前处理
+		if (mZombieLife->GetCurrHP() <= 0.0f)
+		{
+			mIsDead = true;
+			ToDeath();
+		}
+	}
 }
 
 void ZombieScript::CollisionEnter(ICollider* other)
@@ -65,9 +100,16 @@ void ZombieScript::CollisionEnter(ICollider* other)
 	{
 		mWalkingSpeed = 0;
 		mAnim->Play("ChewingGIF");
+		// 播放僵尸咀嚼音频
+		mAudio->Play("Resource/Sounds/chomp.wav");
 
 		mPlantLife = other->GetGameObj()->GetComponent<LifeScript>();
 		mAttackTimer = Time::Time_s() + mAttackCD;
+	}
+	// 被割草机创到了，直接消失！
+	else if (other->GetGameObj()->mTag == "LawnMower")
+	{
+		mZombieLife->SetHp(0.0f);
 	}
 }
 
@@ -79,31 +121,25 @@ void ZombieScript::CollisionStay(ICollider* other)
 		{
 			mAttackTimer += mAttackCD;
 			mPlantLife->AddHP(-mDamage);
-			// 植物死亡，恢复前行
-			//if (mPlantLife->GetCurrHP() <= 0.0f)
-			//	ToWalking();
+
+			// 播放僵尸咀嚼音频
+			int r = Random(0, 10);
+			if(r % 2)
+				mAudio->Play("Resource/Sounds/chomp.wav");
+			else
+				mAudio->Play("Resource/Sounds/chomp2.wav");
 		}
 	}
 }
 
-void ZombieScript::HPChange(float hp)
+void ZombieScript::StopMove()
 {
-	SDL_Log("ZombieScript HP: %f", hp);
-	// 默认的血量变动回调，为0死亡
-	if (hp <= 0.0f)
+	if(mIsFirstWinner == false)
 	{
-		// 不要直接删除植物，请通过草皮删除植物
-		// 因为草皮管理着其上的多个植物，
-		// 如果直接删除植物，会导致草皮无法种植新植物
-
-		//Destroy(mGameObject);
+		// 不能动
 		mWalkingSpeed = 0;
-		//mPlantLife == nullptr;
-		mCollider->SetEnable(false);	//禁用碰撞器防止反复触发动画
-		mAnim->Play("DeathBodyGIF");
-		// 动画回调：倒地动画结束后销毁僵尸对象
-		mAnim->AddActions("DeathBodyGIF", {
-			{ 9, [this] {Destroy(mGameObject); }}
-			});
+		mAnim->SetFPS(0);
+		// 不碰撞
+		//mCollider->SetEnable(false);
 	}
 }

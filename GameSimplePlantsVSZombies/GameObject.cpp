@@ -30,6 +30,7 @@ void GameObject::AddComponent(ComponentBase* comp)
 {
 	mPendingComponents.emplace_back(comp);
 	comp->SetOwner(this);
+	comp->SetEnable(GetActive());
 }
 
 void GameObject::RemoveComponent(ComponentBase* comp)
@@ -88,6 +89,8 @@ void GameObject::SetParent(GameObject* obj)
 {
 	// 层级关系应由变换组件管理
 	mTransform->SetParent(obj->mTransform);
+	// 活跃性跟随父对象
+	SetActive(obj->GetActive());
 }
 
 GameObject::GameObject(const GameObject& other)

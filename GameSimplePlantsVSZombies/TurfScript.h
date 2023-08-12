@@ -3,6 +3,7 @@
 #include "Button.h"
 #include "PlantsManager.h"
 #include "CardBankScript.h"
+#include "AudioSource.h"
 
 class TurfScript :
 	public ComponentBase
@@ -17,6 +18,9 @@ private:
 	// 已种植植物对象
 	GameObject* mPlant = nullptr;
 	// 以后还有南瓜等植物，需要辅助的植物对象容器
+
+	// 音频组件引用
+	AudioSource* mAudio = nullptr;
 
 public:
 	// 按钮组件

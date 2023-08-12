@@ -21,6 +21,8 @@ public:
 	void SetRange(float min, float max);
 	// 增加生命值（输入负数减少生命值）
 	void AddHP(float f);
+	// 设置生命值
+	void SetHp(float f);
 	// 获取当前生命值
 	float GetCurrHP() const { return mHP; };
 

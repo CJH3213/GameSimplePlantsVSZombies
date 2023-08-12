@@ -18,9 +18,13 @@ void LifeScript::AddHP(float f)
 {
 	mHP += f;
 
-	if (mHP < mMinHP) mHP = mMinHP;
-	if (mHP > mMaxHP) mHP = mMaxHP;
-	
+	SetHp(mHP);
+}
+
+void LifeScript::SetHp(float f)
+{
+	mHP = Math::Clamp(f, mMinHP, mMaxHP);
+
 	mChangeEvents.InvokeAll(mHP);
 }
 

@@ -12,6 +12,8 @@ void ChooseBoxScript::Awake()
 	mCardBank = GetScene()->FindGameObject("CardBank")->GetComponent<CardBankScript>();
 	// 获取背景图对象
 	mBackGround = GetScene()->FindGameObject("BackGround");
+	// 获取场景音频脚本
+	mAudio = GetScene()->FindGameObject("AdventureAudio")->GetComponent<AudioSource>();
 
 	// 点击事件监听
 	mStartBtn->mMouseUpAsButtonEvents.AddListener("ChooerScript", std::bind(&ChooseBoxScript::OnClick, this));
